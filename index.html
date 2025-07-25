@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow a Garden - Ultimate Calculator</title>
+    <meta name="description" content="The ultimate profit and efficiency calculator for the Roblox game Grow a Garden. Maximize your sheckles by calculating the best crops with pet and multi-mutation bonuses.">
+    
+    <meta property="og:title" content="Grow a Garden Ultimate Calculator">
+    <meta property="og:description" content="The most comprehensive calculator for Grow a Garden. Calculate profit per minute with all crops, pets, and mutations.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://growagardencalculator.lol/">
+    <meta property="og:image" content="https://growagardencalculator.lol/apple-touch-icon.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Grow a Garden Ultimate Calculator</h1>
+        <p>Select your crop, pet, and all applicable mutations to instantly calculate your profit!</p>
+    </header>
+
+    <main class="calculator">
+        <div class="input-section">
+            <div class="input-group">
+                <label for="crop-select-custom">Crop:</label>
+                <div class="custom-select-wrapper" id="crop-select-wrapper">
+                    <div class="custom-select-trigger"></div>
+                    <div class="custom-options"></div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="pet-select">Pet:</label>
+                <select id="pet-select"></select>
+            </div>
+        </div>
+        
+        <div class="mutation-section">
+            <h2>Select Mutations:</h2>
+            <div id="mutation-grid" class="mutation-grid"></div>
+        </div>
+
+        <div class="result-section">
+            <div class="result-box">
+                <h2>Total Profit</h2>
+                <p id="profit-result">$0</p>
+            </div>
+            <div class="result-box">
+                <h2>Profit Per Minute</h2>
+                <p id="profit-per-minute-result">$0/min</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
