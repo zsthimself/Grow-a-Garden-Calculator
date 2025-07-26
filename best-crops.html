@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Crops for Profit (Ranked) - Grow a Garden Calculator</title>
+    <meta name="description" content="A data-driven ranking of all crops in Grow a Garden. Sort by profit per minute, raw profit per harvest, or cost to find the best crop for your strategy.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="guide-page">
+
+    <header>
+        <h1>Best Crops for Profit: A Data-Driven Ranking</h1>
+        <p>Discover which crops will give you the best return on your investment. Use the buttons to sort the list based on your personal farming strategy.</p>
+        <a href="/" class="back-link">← Back to Calculator</a>
+    </header>
+
+    <main class="guide-container">
+        <div class="guide-section">
+            <div class="sort-buttons" style="margin-bottom: 20px;">
+                <button id="sort-profit-per-minute" class="active">Sort by Profit / Minute</button>
+                <button id="sort-raw-profit">Sort by Raw Profit</button>
+                <button id="sort-cost">Sort by Seed Cost</button>
+            </div>
+            <div class="table-wrapper">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Crop</th>
+                            <th>Seed Cost</th>
+                            <th>Sell Price</th>
+                            <th>Growth Time (min)</th>
+                            <th>Raw Profit</th>
+                            <th>Profit / Minute</th>
+                        </tr>
+                    </thead>
+                    <tbody id="crop-table-body">
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="site-footer">
+        </footer>
+
+    <script src="data.js"></script>
+    <script src="best-crops.js"></script>
+</body>
+</html>
