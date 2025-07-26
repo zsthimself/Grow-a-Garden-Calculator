@@ -28,23 +28,47 @@
 
     <main class="calculator">
         <div class="input-section">
-            <div class="input-group">
-                <label for="crop-select-custom">Crop:</label>
-                <div class="custom-select-wrapper" id="crop-select-wrapper">
-                    <div class="custom-select-trigger"></div>
-                    <div class="custom-options"></div>
-                </div>
-            </div>
-            <div class="input-group">
-                <label for="pet-select">Pet:</label>
-                <select id="pet-select"></select>
-            </div>
+    <div class="input-group">
+        <label for="crop-select-custom">Crop:</label>
+        <div class="custom-select-wrapper" id="crop-select-wrapper">
+            <div class="custom-select-trigger"></div>
+            <div class="custom-options"></div>
         </div>
+    </div>
+    <div class="input-group">
+        <label for="pet-select">Pet:</label>
+        <select id="pet-select"></select>
+    </div>
+
+    <div class="global-settings">
+        <div class="input-group">
+            <label for="quantity-input">Quantity:</label>
+            <input type="number" id="quantity-input" value="1" min="1">
+        </div>
+        <div class="input-group">
+            <label for="friend-boost-input">Friends:</label>
+            <input type="number" id="friend-boost-input" value="0" min="0" max="5">
+        </div>
+        <div class="input-group checkbox-group">
+             <input type="checkbox" id="gamepass-toggle">
+             <label for="gamepass-toggle">x2 Sheckles Pass</label>
+        </div>
+    </div>
+</div>
         
         <div class="mutation-section">
-            <h2>Select Mutations:</h2>
-            <div id="mutation-grid" class="mutation-grid"></div>
+<h2>Select Mutations: <a href="/mutations.html" class="guide-link">(How to get?)</a></h2>   
+ <div class="mutation-controls">
+        <input type="search" id="mutation-search" placeholder="Search for a mutation...">
+        <div class="sort-buttons">
+            <button id="sort-alpha-btn">Sort A-Z</button>
+            <button id="sort-value-btn">Sort by Value</button>
         </div>
+    </div>
+    
+    <div id="mutation-grid" class="mutation-grid">
+        </div>
+</div>
 
         <div class="result-section">
             <div class="result-box">

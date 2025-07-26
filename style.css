@@ -218,3 +218,167 @@ header p {
     color: #d4d4d4;
     flex-grow: 1;
 }
+
+/* style.css (在文件末尾添加这些新样式) */
+
+/* --- Search and Sort Controls Styles --- */
+
+.mutation-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#mutation-search {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #3c3c3c;
+    background-color: #3c3c3c;
+    color: #d4d4d4;
+    font-size: 14px;
+    min-width: 200px;
+}
+
+.sort-buttons button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: 1px solid #3c3c3c;
+    background-color: #4f5358;
+    color: #d4d4d4;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.sort-buttons button:hover {
+    background-color: #569cd6;
+}
+
+/* 一个用于隐藏元素的辅助类 */
+.hidden {
+    display: none !important;
+}
+
+/* style.css (在文件末尾添加这些新样式) */
+
+/* --- Global Settings Styles --- */
+
+.global-settings {
+    padding-top: 15px;
+    margin-top: 15px;
+    border-top: 1px solid #3c3c3c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.global-settings .input-group {
+    margin-bottom: 0;
+}
+
+/* Specific styling for number inputs */
+.global-settings input[type="number"] {
+    width: 80px;
+}
+
+/* Specific styling for the checkbox group */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-group label {
+    width: auto; /* Override default width */
+    text-align: left;
+    margin-right: 0;
+    order: 2; /* Make label appear after checkbox */
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    order: 1; /* Make checkbox appear before label */
+    accent-color: #569cd6;
+}
+
+/* style.css (在文件末尾添加这些新样式) */
+
+/* --- Guide Page Styles --- */
+
+.guide-page header {
+    border-bottom: 1px solid #3c3c3c;
+    padding-bottom: 20px;
+}
+
+a.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #9cdcfe;
+    text-decoration: none;
+    background-color: #252526;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #3c3c3c;
+    transition: background-color 0.2s;
+}
+
+a.back-link:hover {
+    background-color: #4f5358;
+}
+
+.guide-container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.guide-section {
+    background-color: #252526;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.guide-section h3 {
+    color: #569cd6;
+    border-bottom: 1px solid #3c3c3c;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.guide-section dl {
+    margin: 0;
+}
+
+.guide-section dt {
+    font-weight: bold;
+    color: #d4d4d4;
+    margin-top: 15px;
+}
+
+.guide-section dd {
+    margin-left: 20px;
+    color: #9cdcfe;
+}
+
+/* Style for the new link on the main page */
+a.guide-link {
+    font-size: 14px;
+    font-weight: normal;
+    color: #9cdcfe;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+a.guide-link:hover {
+    text-decoration: underline;
+}
