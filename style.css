@@ -632,3 +632,15 @@ a.guide-link:hover {
     display: block;
     margin-top: 5px;
 }
+
+/* style.css (在文件末尾添加这些新样式) */
+
+/* --- Code Styles for Codes Page --- */
+.code-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: #1e1e1e;
+    padding: 8px 12px !important;
+    border-radius: 4px;
+    color: #ce9178;
+}
